@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="left">
+        <a href="/">Yassen Khaled</a>
+      </div>
+      <div class="right">
+        <a
+          href="https://github.com/yasu023"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yassin-khaled-11ba1a2a2/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+        <a href="mailto:yassin.khaled.dev@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- section 1 me  -->
+      <section class="me-sec">
+        <div class="text">
+          <h2>Hi, I'm Yassen <span id="code-symbol-span">&lt;/&gt;</span></h2>
+          <p>
+            Frontend Developer. <br />
+            I creat fast, user-friendly and visually engaging websites that
+            <br />
+            turn your ideas into smooth, interactive experiences.
+          </p>
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
+            <a href="#projects">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+            <a href="#contact">
+              <i class="fa-solid fa-address-card"></i>
+              <span>Contact</span>
+            </a>
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1yNLj0DmA1fWpl_QgDDChMClvwK--rko4/view?usp=drive_link"
+            >
+              <i class="fa-solid fa-file"></i>
+              <span>CV</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="headshot">
+          <img src="/assets/me1.webp" alt="Yassen Khaled" />
+        </div>
+      </section>
+
+      <!-- section 2 my skills -->
+      <section id="skills" class="skills-sec">
+        <h2>Skills</h2>
+        <div class="cells">
+          <div class="cell">
+            <img src="./assets/html.webp" alt="Html logo" />
+            <span>HTML</span>
+          </div>
+
+          <div class="cell">
+            <img src="./assets/css.webp" alt="css logo" />
+            <span>CSS</span>
+          </div>
+
+          <div class="cell">
+            <img src="./assets/js.webp" alt="java script logo" />
+            <span>JavaScript</span>
+          </div>
+
+          <div class="cell">
+            <img src="./assets/node js.webp" alt="node js logo" />
+            <span>Node.js</span>
+          </div>
+
+          <div class="cell">
+            <img src="./assets/react.webp" alt="react logo" />
+            <span>React.js</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/python.webp" alt="python logo" />
+            <span>Python</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/c++.webp" alt="c++ logo" />
+            <span>CPP</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/java.webp" alt="java logo" />
+            <span>Java</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 3 my projects -->
+      <section id="projects"></section>
+
+      <!-- section 4 contact -->
+      <section id="contact" class="contact-sec">
+        <h2>Contact</h2>
+        <div class="group">
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="10"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+  <div class="container">
+    <video autoplay loop muted play-inline class="background-clip">
+      <source src="./assets/3141210-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+    </video>
+  </div>
+</html>

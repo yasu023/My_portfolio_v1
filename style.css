@@ -1,0 +1,368 @@
+:root {
+  --text-color: white;
+  --link-color: #324CD9;
+  --background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.background-clip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.3;
+  object-fit: cover;
+}
+
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 80px;
+  align-items: center;
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+/* sec 1 */
+.me-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  margin-top: 125px;
+  gap: 40px
+}
+
+.me-sec .text {
+  flex: 5;
+  color: var(--text-color);
+}
+
+/* hi yassen glitch animation */
+.me-sec .text h2 {
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  text-shadow: 
+  0.05em 0 0 rgb(255, 0, 0,75),
+  -0.025em -.05em 0 rgb(0, 255, 0,75),
+  0.025em .05em 0 rgb(0, 0, 255,75);
+
+  animation: glitch 500ms infinite;
+}
+
+#main-glitch-span {
+  position: absolute;
+}
+
+.me-sec .text #code-symbol-span {
+  font-size: 42px;
+  top: 0;
+  left: 0;
+}
+
+@keyframes glitch {
+  0% {
+      text-shadow: 
+  0.05em 0 0 rgb(255, 0, 0,75),
+  -0.025em -.05em 0 rgb(0, 255, 0,75),
+  0.025em .05em 0 rgb(0, 0, 255,75);
+  }
+  14% {
+      text-shadow: 
+  0.05em 0 0 rgb(255, 0, 0,75),
+  -0.025em -.05em 0 rgb(0, 255, 0,75),
+  0.025em .05em 0 rgb(0, 0, 255,75);
+  }
+    15% {
+      text-shadow: 
+  -0.05em -0.025 0 rgb(255, 0, 0,75),
+  0.025em .025em 0 rgb(0, 255, 0,75),
+  -0.05em -.05em 0 rgb(0, 0, 255,75);
+  }
+  49% {
+      text-shadow: 
+  -0.05em -0.025 0 rgb(255, 0, 0,75),
+  0.025em .025em 0 rgb(0, 255, 0,75),
+  -0.05em -.05em 0 rgb(0, 0, 255,75);
+  }
+    50% {
+      text-shadow: 
+  0.025em 0 0.05em rgb(255, 0, 0,75),
+  0.05em 0 0 rgb(0, 255, 0,75),
+  0 -.05em 0 rgb(0, 0, 255,75);
+  }
+  99% {
+      text-shadow: 
+  0.025em 0 0.05em rgb(255, 0, 0,75),
+  0.05em 0 0 rgb(0, 255, 0,75),
+  0 -.05em 0 rgb(0, 0, 255,75);
+  }
+    100% {
+      text-shadow: 
+  -0.025em 0 0 rgb(255, 0, 0,75),
+  -0.025em -.025em 0 rgb(0, 255, 0,75),
+  -0.025em -.05em 0 rgb(0, 0, 255,75);
+  }
+}
+
+.me-sec .text .links {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.me-sec .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: .1s;
+}
+
+.me-sec .text .links a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+
+}
+
+.me-sec .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.me-sec .headshot img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+/* sec 2 */
+.skills-sec {
+  padding: 0 50px;
+  margin-bottom: 100px;
+  margin-top: 250px;
+}
+
+.skills-sec h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.skills-sec .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-sec h2 {
+  color: var(--text-color);
+}
+
+.skills-sec .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-sec .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.skills-sec .cells .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.skills-sec .cells .cell span {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.skills-sec #chartContainer {
+  background-color: black;
+}
+
+/* sec 4 */
+.contact-sec {
+  padding: 0 50px;
+  margin-bottom: 100px;
+  color: var(--text-color);
+}
+
+.contact-sec h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-top: 250px;
+}
+
+.contact-sec .group {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.contact-sec .group form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact-sec .group form input,
+.contact-sec .group form textarea {
+  font-family: 'Poppins' sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.contact-sec .group form button {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.contact-sec .group form button:hover {
+  filter: brightness(.9);
+}
+
+@media (max-width: 620px) {
+  /* navbar */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  /* sec 1 */
+  .me-sec {
+    padding: 0 20px;
+    flex-direction: column-reverse;
+  }
+
+  .me-sec .text h2 {
+    font-size: 30px;
+  }
+
+  .me-sec .headshot img {
+    width: 250px;
+  }
+
+  /* sec 2 */
+  .skills-sec {
+    padding: 0 20px;
+  }
+
+  .skills-sec .cells .cell span {
+    font-size: 16px;
+  }
+
+  /* sec 4 */
+  .contact-sec {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 740px) {
+  /* sec 1 */
+  .me-sec {
+    flex-direction: column-reverse;
+  }
+
+  .me-sec .headshot img {
+    width: 250px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 850px) {
+  /* sec 1 */
+  .me-sec .text h2 {
+    font-size: 35px;
+  }
+
+  /* sec 4 */
+  .contact-sec .group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
